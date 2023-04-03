@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Todo from './Todo';
 import "./App.css";
-import { v4 as uuidv4 } from 'uuid';
 function App() {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState('');
-  const[todoelement,settodoelement]=useState({});
-
   // Fetch todos from API when component have initial render
   useEffect(() => {
     axios.get('https://jsonplaceholder.typicode.com/todos/')
