@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+
+}
+.todolist{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  max-width: 480px;
+  width: 100%;
+  overflow: hidden;
+  height: 80%;
+  justify-content: space-around;
+  gap: 39px;
+  padding: 40px 20px;
+  position: relative;
+  border-radius: 10px;
+}
+li{
+  list-style-type: none;
+}
+.header {
+  /* position: absolute; */
+  /* top: 30px; */
+  text-align: center;
+  height: 150px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.topinput{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  
+}
+.topinput >button{
+  flex: 1;
+  background-color: #3e3c61;
+  height: 105%;
+  padding: 5px;
+  color: white;
+}
+.addtodo{
+  flex: 3;
+  height: 100%;
+  border: none;
+  
+}
+.listcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  /* top: 140px; */
+  height: 500px}
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    overflow-y: auto;
+    height: 100%;
+}
+.listcontainer >ul >li {
+  width: 80%;
+  padding: 6px 10px;
+}
+@media (max-width:1100px) {
+   .todo-container{
+    height: 85%;
+   } 
+    
+}
+@media (max-width:900px) {
+  .todo-container{
+   height: 80% ;
+  } 
+   
+}
+@media (max-width:700px) {
+  .todo-container{
+   height: 95%;
+  } 
+   
+}
